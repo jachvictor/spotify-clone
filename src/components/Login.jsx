@@ -6,7 +6,8 @@ import "../css/login.css";
 export default function Login() {
   const handleClick = async () => {
     const client_id = "1339902024254cb6aa018773f8d49be9";
-    const redirect_uri = "http://localhost:3000/";
+    // const redirect_uri = "http://localhost:3000/";
+    const redirect_uri = "https://jachvictor.github.io/spotify-clone/";
     const api_uri = "https://accounts.spotify.com/authorize";
     const RESPONSE_TYPE = "token"
     const scope = [
