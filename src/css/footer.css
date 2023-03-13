@@ -1,0 +1,17 @@
+.contain3 {
+  /* position: relative; */
+  height: 3cm;
+  width: 20cm;
+  background-color: rgb(249, 248, 248);
+  /* border-top: 1px solid #282828; */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  float: left;
+  /* margin-right: 9cm; */
+  margin-top: 14cm;
+  padding-bottom: 1cm;
+  border-radius: 0.4cm;
+}

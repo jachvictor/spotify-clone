@@ -1,0 +1,118 @@
+.contain4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 15vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  transition: 0.3s ease-in-out;
+  /* margin-right: 4cm; */
+  /* background-color: ${({ navBackground }) =>
+    navBackground ? "rgba(0,0,0,0.7)" : "none"}; */
+}
+.searchbar {
+  /* position: fixed; */
+  background-color: white;
+  width: 45%;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 0.5rem;
+  /* margin-right: 10cm; */
+  /* float: right; */
+  /* margin-top: 10cm; */
+}
+.input {
+  border: none;
+  height: 2rem;
+  width: 100%;
+  
+  
+}
+
+.avatar {
+  background-color: black;
+  padding: 0.3rem 0.4rem;
+  padding-right: 1rem;
+  border-radius: 2rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 4cm;
+  height: 1cm;
+  /* float: right; */
+  margin-right: 1.6cm;
+}
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+svg {
+  font-size: 1.3rem;
+  background-color: #282828;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  color: #c7c5c5;
+}
+.move {
+  /* background-color: white; */
+  width: 1cm;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* margin-right: 13cm; */
+  float: left;
+  background-color:rgb(247, 237, 240);
+  margin-left: 1cm;
+  margin-top: 0.7cm;
+  border: none;
+  /* font-size: xx-large; */
+  font-weight: 200;
+}
+.logout{
+  height: 1cm;
+  font-size: large;
+  width: 3cm;
+  border-radius: 1cm;
+  color: white;
+  background-color: black;
+
+}
+.searchbar1{
+  /* margin-right: 45cm; */
+  /* margin-bottom: 3cm; */
+  margin-left:-20cm;
+  margin-top:-1.3cm;
+  /* width: 100%; */
+  /* margin-bottom:5cm; */
+  border-radius: 1cm;
+  height: 1cm;
+  background-color: white;
+  width: 12cm;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.input1{
+  border: none;
+  height: 2rem;
+  width: 100%;
+  
+}
+@media (max-width:300px){
+    .searchbar{
+        position: fixed;
+    }
+}

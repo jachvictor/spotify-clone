@@ -1,0 +1,35 @@
+.contain5{
+  background-color: rgb(249, 248, 248);
+  height: 1cm;
+}
+.track {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    }
+    .image { display: flex;
+        align-items: center;
+        gap: 1rem;
+        }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;}
+      .trackname {
+        color: rgb(14, 14, 14);
+      }
+      .trackartists {
+        color: #0c0b0b;
+      }
+      .trackimg{
+        width: 3cm;
+        height: 2cm;
+        margin-left: 0.6cm;
+        
+      }
+    .trackimage{
+      height: auto;
+      width: auto;
+
+    }

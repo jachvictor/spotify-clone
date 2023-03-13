@@ -1,0 +1,22 @@
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1db954;
+  gap: 3cm;
+}
+.img1 {
+  height: 20vh;
+}
+.but1 {
+  padding: 1rem 5rem;
+  border-radius: 2cm;
+  border: none;
+  background-color: black;
+  color: #1db954;
+  font-size: 0.5cm;
+}

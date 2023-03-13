@@ -1,0 +1,17 @@
+.imgh1{
+    margin-top: 8.7cm;
+    background-color: red;
+    margin-left: 0.7cm;
+    width: 6.5cm;
+    height: 6cm;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0.5cm;
+    padding-bottom: 0.95cm;
+}
+.artimg{
+    height: 4cm;
+    width: 6cm;
+    border-radius: 0.3cm;
+}
