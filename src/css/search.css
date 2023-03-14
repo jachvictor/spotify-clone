@@ -70,15 +70,6 @@
   flex-direction: column;
   margin-top: 5cm;
 }
-.list1{
-
-}
-.span1{
-
-}
-.ulist1{
-
-}
 .down{
   /* float: right; */
   margin-top: 3.5cm;
@@ -98,4 +89,9 @@ margin-top: 0.5cm;
   width: 5.5cm;
   border-radius: 0.5cm;
   
+}
+.home{
+  background-color: white;
+  border: 0.5cm,black;
+  color: rgb(5, 5, 5);
 }

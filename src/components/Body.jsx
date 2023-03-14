@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useStateProvider } from "../utils/StateProvider";
 import { AiFillClockCircle } from "react-icons/ai";
 import { reducerCases } from "../utils/Constants";
-import "../css/body.css"
+import "../css/body.css";
 export default function Body({ headerBackground }) {
   const [{ token, selectedPlaylist, selectedPlaylistId }, dispatch] =
     useStateProvider();
@@ -91,7 +91,11 @@ export default function Body({ headerBackground }) {
         <>
           <div className="playlist">
             <div className="image">
-              <img className="img5" src={selectedPlaylist.image} alt="selected playlist" />
+              <img
+                className="img5"
+                src={selectedPlaylist.image}
+                alt="selected playlist"
+              />
             </div>
             <div className="details">
               <span className="type">PLAYLIST</span>
@@ -105,14 +109,14 @@ export default function Body({ headerBackground }) {
                 <span>#</span>
               </div>
               <div className="column">
-                <span>TITLE</span>
+                <span className="span1">TITLE</span>
               </div>
               <div className="column">
-                <span>ALBUM</span>
+                <span className="span2">ALBUM</span>
               </div>
               <div className="column">
                 <span>
-                  <AiFillClockCircle />
+                  <AiFillClockCircle className="home" />
                 </span>
               </div>
             </div>
@@ -175,73 +179,3 @@ export default function Body({ headerBackground }) {
     </div>
   );
 }
-
-// const Container = styled.div`
-// //   .playlist {
-// //     margin: 0 2rem;
-// //     display: flex;
-// //     align-items: center;
-// //     gap: 2rem;
-// //     .img4 {
-// //       img {
-// //         height: 15rem;
-// //         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-// //       }
-// //     }
-// //     .details {
-// //       display: flex;
-// //       flex-direction: column;
-// //       gap: 1rem;
-// //       color: #e0dede;
-// //       .title {
-// //         color: white;
-// //         font-size: 4rem;
-// //       }
-// //     }
-// //   }
-// //   .list {
-// //     .header-row {
-// //       display: grid;
-// //       grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
-// //       margin: 1rem 0 0 0;
-// //       color: #dddcdc;
-// //       position: sticky;
-// //       top: 15vh;
-// //       padding: 1rem 3rem;
-// //       transition: 0.3s ease-in-out;
-// //       background-color: ${({ headerBackground }) =>
-//         headerBackground ? "#000000dc" : "none"};
-//     }
-//     .tracks {
-//       margin: 0 2rem;
-//       display: flex;
-//       flex-direction: column;
-//       margin-bottom: 5rem;
-//       .row {
-//         padding: 0.5rem 1rem;
-//         display: grid;
-//         grid-template-columns: 0.3fr 3.1fr 2fr 0.1fr;
-//         &:hover {
-//           background-color: rgba(0, 0, 0, 0.7);
-//         }
-//         .column {
-//           display: flex;
-//           align-items: center;
-//           color: #dddcdc;
-//           img {
-//             height: 40px;
-//             width: 40px;
-//           }
-//         }
-//         .detail {
-//           display: flex;
-//           gap: 1rem;
-//           .info {
-//             display: flex;
-//             flex-direction: column;
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;

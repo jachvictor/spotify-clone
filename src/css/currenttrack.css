@@ -33,3 +33,8 @@
       width: auto;
 
     }
+    .home{
+      background-color: white;
+      border: 0.5cm,black;
+      color: rgb(5, 5, 5);
+    }

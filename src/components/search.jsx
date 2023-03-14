@@ -1,4 +1,4 @@
-import React, { useState,useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "../css/search.css";
 import Navba from "./NavBa";
@@ -6,18 +6,10 @@ import { useStateProvider } from "../utils/StateProvider";
 import { reducerCases } from "../utils/Constants";
 import { FaSearch } from "react-icons/fa";
 // import "../css/body.css"
+import Head from "./head";
+import { Home } from "@material-ui/icons";
 
 export function Search() {
-
-
-
-
-
-
-
-
-
-
   const [query, setQuery] = useState("");
   const [searchDetails, setSearchDetails] = useState(null);
   const [{ token1 }, dispatch] = useStateProvider();
@@ -71,12 +63,6 @@ export function Search() {
     // dispatch({ type: reducerCases.SET_ALBUMS, albums});
   };
 
-
-
-
-
-
-
   const [token, setToken] = useState("");
   const [searchKey, setSearchKey] = useState("");
   const [artists, setArtists] = useState([]);
@@ -126,10 +112,11 @@ export function Search() {
             alt=""
           />
         ) : (
-          <div className="art"><img src="/images1/r11.png" alt="" /></div>
+          <div className="art">
+            <img src="/images1/r11.png" alt="" />
+          </div>
         )}
-        <div className="artname">
-        {artist.name}</div>
+        <div className="artname">{artist.name}</div>
       </div>
     ));
   };
@@ -145,85 +132,68 @@ export function Search() {
             alt=""
           />
         ) : (
-          <div className="ar"><img src="/images/r11.png" alt="" /></div>
+          <div className="ar">
+            <img src="/images/r11.png" alt="" />
+          </div>
         )}
-        <div className="artname">
-        {artist.name}</div>
+        <div className="artname">{artist.name}</div>
       </div>
     ));
   };
 
   return (
     <div>
-    <div className="contain4">
-      {/* <header className="App-header"> */}
-      {/* <h1>Spotify React</h1> */}
-      {/* {!token ?
-                    <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
-                        to Spotify</a>
-                    : <button onClick={logout}>Logout</button>} */}
-
-      {token ? (
-      
-        <div className="searchbar">
-          <form onSubmit={searchArtists}>
-            <input
-              className="input"
-              type="text"
-              onChange={(e) => setSearchKey(e.target.value)}
-              placeholder="search artist"
-            />
-            {/* <button type={"submit"}>Search</button> */}
-          </form>
-          <Navba
-           navBackground={navBackground}
-            query={query}
-            setQuery={setQuery}
-            onSearch={onSearch}
-          />
+      <div className="contain4">
+        {token ? (
+          <div className="searchbar">
+            <form onSubmit={searchArtists}>
+              <input
+                className="input"
+                type="text"
+                onChange={(e) => setSearchKey(e.target.value)}
+                placeholder="search artist"
+              />
+            </form>
+          </div>
+        ) : (
+          <h2>Please login</h2>
+        )}
+        {/* {searchArtists} */}
+        <h3>favArtist</h3>
+        <div className="con">
+          <ul className="ulist1">
+            <li className="list1">
+              <span className="span1"> {renderArtists()}</span>
+            </li>
+          </ul>
         </div>
-      ) : (
-        <h2>Please login</h2>
-      )}
-      {/* {searchArtists} */}
-      <div className="con">
-        <ul className="ulist1">
-          <li className="list1">
-            <span className="span1"> {renderArtists()}</span>
-            
-          </li>
-        </ul>
+
+        {/* </header> */}
       </div>
-    
-      {/* </header> */}
-    </div>
-    <div className="down">
-     {renderArtists1()}</div>
+      <div className="down">{renderArtists1()}</div>
     </div>
   );
 }
 
+function Navb({ navBackground, query, setQuery, onSearch }) {
+  const [{ userInfo }] = useStateProvider();
 
-
-function Navb({ navBackground , query , setQuery , onSearch}) {
-  const [{ userInfo}] = useStateProvider();
-    
-   
   return (
     <div className="containn4">
       <div className="searchbar1">
-        
         <FaSearch />
-        <form onSubmit={e=>e.preventDefault()} >
-
-        <input className="input1" type="text" onChange={e=>setQuery(e.target.value)} placeholder="Artists, songs, or podcasts" />
-          <button onClick={onSearch} type="submit" style={{display:"none"}} >Search</button>
+        <form onSubmit={(e) => e.preventDefault()}>
+          <input
+            className="input1"
+            type="text"
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Artists, songs, or podcasts"
+          />
+          <button onClick={onSearch} type="submit" style={{ display: "none" }}>
+            Search
+          </button>
         </form>
       </div>
-      {/* <div className="avatar">
-          {userInfo?.imgUrl? <img src={userInfo.imgUrl} width="25px" alt="avatar" />:<CgProfile /> }
-          <span>{userInfo?.userName}</span>
-      </div> */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 // import React from "react";
-import React,{useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 // import './App.css';
-import axios from 'axios';
+import axios from "axios";
 
 export default function Logout() {
   const CLIENT_ID = "1339902024254cb6aa018773f8d49be9";
@@ -9,10 +9,9 @@ export default function Logout() {
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
-  const [token, setToken] = useState("")
-    const [searchKey, setSearchKey] = useState("")
-    const [artists, setArtists] = useState([])
-
+  const [token, setToken] = useState("");
+  const [searchKey, setSearchKey] = useState("");
+  const [artists, setArtists] = useState([]);
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -47,7 +46,9 @@ export default function Logout() {
           <button className="logout"> login</button>
         </a>
       ) : (
-        <button className="logout" onClick={logout}>Logout</button>
+        <button className="logout" onClick={logout}>
+          Logout
+        </button>
       )}
     </div>
   );

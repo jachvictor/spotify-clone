@@ -77,7 +77,7 @@ export default function PlayerControls() {
   return (
     <Container>
       <div className="shuffle">
-      <RepeatIcon />
+        <RepeatIcon />
       </div>
       <div className="previous">
         <SkipPreviousIcon onClick={() => changeTrack("previous")} />
@@ -101,6 +101,8 @@ export default function PlayerControls() {
 
 const Container = styled.div`
   display: flex;
+  margin-left: -8cm;
+  float: left;
   align-items: center;
   justify-content: center;
   gap: 2rem;

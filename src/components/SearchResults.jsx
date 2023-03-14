@@ -9,7 +9,7 @@ function SearchResults({searchDetails}) {
       id,
       name,
       // artists,
-      // image,
+      image,
       // duration_ms,
       uri,
       track_number
@@ -42,7 +42,7 @@ function SearchResults({searchDetails}) {
               </div>
               <div className="col">
                 <span>
-                  <AiFillClockCircle />
+                  <AiFillClockCircle className="home"/>
                 </span>
               </div>
             </div>
@@ -53,7 +53,7 @@ function SearchResults({searchDetails}) {
                     id,
                     name,
                     artists,
-                    // image,
+                    image,
                     duration_ms,
                     // album,
                     uri,
@@ -70,7 +70,7 @@ function SearchResults({searchDetails}) {
                           id,
                           name,
                           // artists,
-                          // images,
+                          image,
                           // duration_ms,
                           uri,
                           // track_number
@@ -82,7 +82,7 @@ function SearchResults({searchDetails}) {
                       </div>
                       <div className="col detail">
                         <div className="image">
-                          {/* <img src={image} alt="track" /> */}
+                          <img src={image[0]} alt="track" />
                         </div>
                         <div className="info">
                           <span className="name">{name}</span>
@@ -111,35 +111,51 @@ export default SearchResults
 
 const Container = styled.div`
 .list {
+  margin-top:5cm;
+  margin-left: -7cm;
+display:flex:
+flex-direction:column:
+  margin-right
+  width:5cm;
     .header-row {
-      display: grid;
+      display: flex;
       grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
       margin: 1rem 0 0 0;
-      color: #dddcdc;
+      color: black;
+     
+      font-size:large;
       position: sticky;
       top: 15vh;
       padding: 1rem 3rem;
       transition: 0.3s ease-in-out;
       background-color: ${({ headerBackground }) =>
-        headerBackground ? "#000000dc" : "none"};
+        headerBackground ? "black" : "none"};
     }
     .tracks {
+      // align-items:center;
+        // justify-content:center:
       margin: 0 2rem;
       display: flex;
       flex-direction: column;
       margin-bottom: 5rem;
       .row {
+        flex-direction: column;
+        align-items:center;
+        justify-content:center:
         padding: 0.5rem 1rem;
         cursor:pointer;
         display: grid;
+        color:black;
+        width:100%;
+        font-size:0.5cm;
         grid-template-columns: 0.3fr 3.1fr 2fr 0.1fr;
         &:hover {
-          background-color: rgba(0, 0, 0, 0.7);
+          background-color: white;
         }
         .col {
           display: flex;
           align-items: center;
-          color: #dddcdc;
+          color: black;
           img {
             // cursor:pointer
             height: 40px;

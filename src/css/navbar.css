@@ -74,7 +74,7 @@ svg {
   float: left;
   background-color:rgb(247, 237, 240);
   margin-left: 1cm;
-  margin-top: 0.7cm;
+  /* margin-top: 0.1cm; */
   border: none;
   /* font-size: xx-large; */
   font-weight: 200;
@@ -89,30 +89,38 @@ svg {
 
 }
 .searchbar1{
+  position: relative;
   /* margin-right: 45cm; */
   /* margin-bottom: 3cm; */
-  margin-left:-20cm;
-  margin-top:-1.3cm;
+  margin-left:6cm;
+  margin-top:0.5cm;
   /* width: 100%; */
   /* margin-bottom:5cm; */
   border-radius: 1cm;
   height: 1cm;
   background-color: white;
-  width: 12cm;
+  width: 40%;
   padding: 0.4rem 1rem;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  /* justify-content: center; */
 }
 .input1{
   border: none;
   height: 2rem;
   width: 100%;
+  border: none;
   
 }
 @media (max-width:300px){
     .searchbar{
         position: fixed;
     }
+}
+.home{
+  background-color: white;
+  border: 0.5cm,black;
+  color: rgb(5, 5, 5);
 }

@@ -12,18 +12,17 @@ overflow: hidden;
   height: 55vh;
   max-height: 100%;
   overflow: auto;
-  &::-webkit-scrollbar {
-    width: 0.7rem;
-   
-  }
+ 
 }
   .li {
     overflow: auto;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-    &:hover {
-      color: white;
-    }
   }
-}
-`;
+   
+  
+  .home{
+    background-color: white;
+    border: 0.5cm,black;
+    color: rgb(5, 5, 5);
+  }

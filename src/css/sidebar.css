@@ -94,3 +94,7 @@ border-radius: 0.2cm;
   border: 0.5cm,black;
   color: rgb(5, 5, 5);
 }
+.header{
+  font-weight: 3cm;
+  font: bolder;
+}

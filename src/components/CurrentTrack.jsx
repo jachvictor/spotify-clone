@@ -3,7 +3,7 @@ import styled from "styled-components";
 import axios from "axios";
 import { useStateProvider } from "../utils/StateProvider";
 import { reducerCases } from "../utils/Constants";
-import "../css/currenttrack.css"
+import "../css/currenttrack.css";
 export default function CurrentTrack() {
   const [{ token, currentPlaying }, dispatch] = useStateProvider();
   useEffect(() => {
@@ -36,7 +36,11 @@ export default function CurrentTrack() {
       {currentPlaying && (
         <div className="track">
           <div className="trackimage">
-            <img className="trackimg" src={currentPlaying.image} alt="currentPlaying" />
+            <img
+              className="trackimg"
+              src={currentPlaying.image}
+              alt="currentPlaying"
+            />
           </div>
           <div className="trackinfo">
             <h4 className="trackinfo trackname">{currentPlaying.name}</h4>
@@ -49,24 +53,3 @@ export default function CurrentTrack() {
     </div>
   );
 }
-
-// const Container = styled.div`
-//   .track {
-//     display: flex;
-//     align-items: center;
-//     gap: 1rem;
-//     &__image {
-//     }
-//     &__info {
-//       display: flex;
-//       flex-direction: column;
-//       gap: 0.3rem;
-//       &__trackname {
-//         color: white;
-//       }
-//       &__trackartists {
-//         color: #b3b3b3;
-//       }
-//     }
-//   }
-// `;
