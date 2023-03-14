@@ -40,9 +40,9 @@ function Spotify() {
       });
       // console.log("data",data)
       const userInfo = {
-    
+        // userId: data.id,
         userName: data.display_name,
-        imgUrl: data.images[0].url,
+        // imgUrl: data.images[0].url,
         userId: data.id,
         userUrl: data.external_urls.spotify,
         name: data.display_name,

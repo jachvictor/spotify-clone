@@ -12,7 +12,7 @@ export default function Navba({ navBackground, query, setQuery, onSearch }) {
       <button className="move">&larr;</button>
       <button className="move">&rarr;</button>
       <div className="searchbar1">
-        <FaSearch />
+        <FaSearch className="home" />
         <form onSubmit={(e) => e.preventDefault()}>
           <input
             className="inpu1"

@@ -9,7 +9,7 @@ function SearchResults({searchDetails}) {
       id,
       name,
       // artists,
-      image,
+      // image,
       // duration_ms,
       uri,
       track_number
@@ -53,7 +53,7 @@ function SearchResults({searchDetails}) {
                     id,
                     name,
                     artists,
-                    image,
+                    // image,
                     duration_ms,
                     // album,
                     uri,
@@ -70,7 +70,7 @@ function SearchResults({searchDetails}) {
                           id,
                           name,
                           // artists,
-                          image,
+                          // image,
                           // duration_ms,
                           uri,
                           // track_number
@@ -82,7 +82,7 @@ function SearchResults({searchDetails}) {
                       </div>
                       <div className="col detail">
                         <div className="image">
-                          <img src={image[0]} alt="track" />
+                          {/* <img src={image[0]} alt="track" /> */}
                         </div>
                         <div className="info">
                           <span className="name">{name}</span>

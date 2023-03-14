@@ -29,17 +29,17 @@ export default function Volume() {
 
 const Container = styled.div`
   display: flex;
-  width: 100%;
-  float: right;
+  width:100%;
+  float:right;
   // margin-left:14cm;
-  margin-top: -2cm;
+  margin-top:-2cm;
   justify-content: flex-end;
   align-content: center;
   input {
-    width: 30%;
+    width: 1%;
     border-radius: 2rem;
     height: 0.5rem;
-    margin-right: -14cm;
-    displey: flex;
+    margin-right:-14cm;
+    displey:flex;
   }
 `;

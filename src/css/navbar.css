@@ -45,6 +45,7 @@
   height: 1cm;
   /* float: right; */
   margin-right: 1.6cm;
+  color: white;
 }
 .a {
   display: flex;
@@ -114,13 +115,13 @@ svg {
   border: none;
   
 }
-@media (max-width:300px){
-    .searchbar{
-        position: fixed;
-    }
-}
 .home{
   background-color: white;
   border: 0.5cm,black;
   color: rgb(5, 5, 5);
+}
+@media (max-width:300px){
+    .searchbar{
+        position: fixed;
+    }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import CurrentTrack from "./CurrentTrack";
 import PlayBack from "./PlayBack";
-
 import PlayerControls from "./PlayerControls";
 import Volume from "./Volume";
 import "../css/footer.css";

@@ -116,7 +116,7 @@ export default function Body({ headerBackground }) {
               </div>
               <div className="column">
                 <span>
-                  <AiFillClockCircle className="home" />
+                  <AiFillClockCircle />
                 </span>
               </div>
             </div>
