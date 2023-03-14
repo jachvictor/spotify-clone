@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function Logout() {
   const CLIENT_ID = "1339902024254cb6aa018773f8d49be9";
-  const REDIRECT_URI = "http://localhost:3000/";
+  const REDIRECT_URI = "https://jachvictor.github.io/spotify-clone/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
