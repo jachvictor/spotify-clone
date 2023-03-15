@@ -32,14 +32,17 @@ const Container = styled.div`
   width:100%;
   float:right;
   // margin-left:14cm;
-  margin-top:-2cm;
+  margin-top:-3cm;
   justify-content: flex-end;
   align-content: center;
+  color:black;
   input {
-    width: 1%;
+    width: 1.6cm;
     border-radius: 2rem;
     height: 0.5rem;
     margin-right:-14cm;
     displey:flex;
+    color:black;
+    background-color:black;
   }
 `;

@@ -47,6 +47,7 @@ function PlayBack() {
       autoPlay={true}
       play={playerState}
       styles={{
+        
         bgColor: "#181818",
         color: "#1db954",
         activeColor: "#1db954",

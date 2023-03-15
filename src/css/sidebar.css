@@ -12,15 +12,15 @@
   /* align-items: center; */
   /* justify-content: center; */
 }
-.link {
-  position:relative;
+.l {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
-.logo {
+.log {
   /* text-align: center; */
   margin: 0.2cm;
-  flex-direction: row-;
+  flex-direction: column;
 }
 .img2 {
   max-inline-size: 60%;
@@ -30,16 +30,20 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5cm;
-  padding: 1cm;
+  /* gap: 0.5cm; */
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
   margin-top: 1cm;
   /* font-size: large; */
   overflow: auto;
-  height: 90%;
-  
+  height: 75%;
 }
-.ulist::-webkit-scrollbar{
+.ulist::-webkit-scrollbar {
   display: none;
+}
+.list:hover {
+  background-color: black;
+  color: white;
 }
 
 .list {
@@ -47,50 +51,73 @@
   gap: 0.2cm;
   cursor: pointer;
   transition: 0.3Ss ease-in-out;
+  border-radius: 0.3cm;
+  height: 2cm;
+  /* width: 5cm; */
+  align-items: center;
+  padding-left: 0.3cm;
+  /* justify-content: center; */
 
   /* overflow: auto; */
   /* &:hover{
     color:white;
+    
     } */
 }
-.list::-webkit-hover{
-  background-color: black;
+.span1 {
+  width: 3cm;
 }
-.p{
+
+.p {
   background-color: rgb(151, 148, 148);
   height: 0.1cm;
   /* margin-top: cm; */
   width: 5cm;
   float: left;
 }
-.color1{
+.color1 {
   background-color: red;
   height: 0.35cm;
   width: 0.35cm;
   margin-top: 0.4cm;
-margin-left: 1cm;
-border-radius: 0.2cm;
+  margin-left: 1cm;
+  border-radius: 0.2cm;
 }
 
-.color2{
+.color2 {
   background-color: orange;
   height: 0.35cm;
   width: 0.35cm;
   margin-top: -0.35cm;
-margin-left: 1.5cm;
-border-radius: 0.2cm;
+  margin-left: 1.5cm;
+  border-radius: 0.2cm;
 }
 
-.color3{
+.color3 {
   background-color: green;
   height: 0.35cm;
   width: 0.35cm;
   margin-top: -0.35cm;
-margin-left: 2cm;
-border-radius: 0.2cm;
+  margin-left: 2cm;
+  border-radius: 0.2cm;
 }
 /* .home{
   background-color: white;
   border: 0.5cm,black;
   color: rgb(5, 5, 5);
 } */
+.img1 {
+  height: 1cm;
+  width: 3cm;
+  margin-left: 1cm;
+  margin-top: 1cm;
+  margin-bottom: -0.5cm;
+}
+.span2 {
+  overflow: auto;
+  height: 2cm;
+  width: auto;
+}
+.span2::-webkit-scrollbar {
+  display: none;
+}

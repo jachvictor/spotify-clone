@@ -102,20 +102,27 @@ export default function PlayerControls() {
 const Container = styled.div`
   display: flex;
   margin-left: -8cm;
+  margin-top: -1cm;
   float: left;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   svg {
-    color: #b3b3b3;
+    color: black;
+    background-color:white;
     transition: 0.2s ease-in-out;
     &:hover {
       color: white;
+      background-color:black;
     }
   }
   .state {
     svg {
-      color: white;
+      color: black;
+      &:hover {
+        color: white;
+        background-color:black;
+      }
     }
   }
   .previous,

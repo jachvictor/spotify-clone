@@ -74,7 +74,7 @@ export function Avatar({ navBackground }) {
   const [{ userInfo }] = useStateProvider();
   return (
     <div className="cantain4" navBackground={navBackground}>
-      <h3>userprofile</h3>
+      <h3 className="h3">userprofile</h3>
       <div className="avatar">
         <a className="a" href={userInfo?.userUrl}>
           <CgProfile className="home" />

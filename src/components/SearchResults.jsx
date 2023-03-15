@@ -3,6 +3,7 @@ import { AiFillClockCircle } from "react-icons/ai";
 import { reducerCases } from '../utils/Constants';
 import { useStateProvider } from '../utils/StateProvider';
 import styled from 'styled-components';
+import "../css/sr.css"
 function SearchResults({searchDetails}) {
     const [, dispatch] = useStateProvider();
     const playTrack =( 
@@ -25,24 +26,27 @@ function SearchResults({searchDetails}) {
       };
   return (
     <Container>
-     
+     {/* <div className="imag6"> */}
+     <img className="des" src={process.env.PUBLIC_URL + '/des.png'} alt="logo" />
+
+     {/* </div> */}
       <>
         <div className="playlist">
           </div>
           <div className="list">
             <div className="header-row">
               <div className="col">
-                <span>#</span>
+                <span className='spanh1'>#</span>
               </div>
               <div className="col">
-                <span>TITLE</span>
+                <span className='spanh1'>TITLE</span>
               </div>
               <div className="col">
-                <span>ALBUM</span>
+                <span className='spanh2'>ALBUM</span>
               </div>
               <div className="col">
                 <span>
-                  <AiFillClockCircle className="home"/>
+                  <AiFillClockCircle className="spanh3"/>
                 </span>
               </div>
             </div>
@@ -122,6 +126,8 @@ flex-direction:column:
       grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
       margin: 1rem 0 0 0;
       color: black;
+      margin-left:9cm;
+      margin-top:-9cm;
      
       font-size:large;
       position: sticky;
@@ -129,15 +135,15 @@ flex-direction:column:
       padding: 1rem 3rem;
       transition: 0.3s ease-in-out;
       background-color: ${({ headerBackground }) =>
-        headerBackground ? "black" : "none"};
+        headerBackground ? "white" : "none"};
     }
     .tracks {
       // align-items:center;
         // justify-content:center:
-      margin: 0 2rem;
+      // margin: 0 2rem;
       display: flex;
       flex-direction: column;
-      margin-bottom: 5rem;
+      margin-left: -19cm;
       .row {
         flex-direction: column;
         align-items:center;

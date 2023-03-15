@@ -115,11 +115,12 @@ export default function Body({ headerBackground }) {
                 <span className="span2">ALBUM</span>
               </div>
               <div className="column">
-                <span>
+                <span className="span3">
                   <AiFillClockCircle />
                 </span>
               </div>
             </div>
+            
             <div className="tracks">
               {selectedPlaylist.tracks.map(
                 (
@@ -150,6 +151,7 @@ export default function Body({ headerBackground }) {
                         )
                       }
                     >
+                      {/* <div className="hoverr"> */}
                       <div className="column">
                         <span>{index + 1}</span>
                       </div>
@@ -157,6 +159,7 @@ export default function Body({ headerBackground }) {
                         <div className="imgh">
                           <img className="img4" src={image} alt="track" />
                         </div>
+                        {/* </div> */}
                         <div className="info">
                           <span className="name">{name}</span>
                           <span>{artists}</span>
@@ -168,6 +171,7 @@ export default function Body({ headerBackground }) {
                       <div className="column">
                         <span>{msToMinutesAndSeconds(duration)}</span>
                       </div>
+                 
                     </div>
                   );
                 }

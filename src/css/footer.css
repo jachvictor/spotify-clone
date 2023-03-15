@@ -2,7 +2,7 @@
   /* position: relative; */
   height: 3cm;
   width: 20cm;
-  background-color: rgb(249, 248, 248);
+  background-color:white;
   /* border-top: 1px solid #282828; */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;

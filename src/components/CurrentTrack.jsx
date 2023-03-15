@@ -17,6 +17,7 @@ export default function CurrentTrack() {
           },
         }
       );
+      console.log(response.data)
       if (response.data !== "") {
         const currentPlaying = {
           id: response.data.item.id,

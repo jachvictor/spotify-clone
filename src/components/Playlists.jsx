@@ -1,5 +1,6 @@
 // import axios from "axios";
 import axios from "axios";
+import PlayCircleOutline from "@material-ui/icons/PlayCircleOutline";
 
 import React, { useEffect } from "react";
 import styled from "styled-components";
@@ -33,6 +34,7 @@ export default function Playlists() {
   };
   return (
     <div className="contain6">
+      <PlayCircleOutline/>
       My play list
       <ul className="ulist2">
         {playlists.map(({ name, id }) => {

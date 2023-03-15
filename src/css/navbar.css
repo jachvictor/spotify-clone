@@ -46,6 +46,10 @@
   /* float: right; */
   margin-right: 1.6cm;
   color: white;
+  /* margin-top: 0.3cm; */
+}
+.h3{
+  margin-top: 0.5cm;
 }
 .a {
   display: flex;

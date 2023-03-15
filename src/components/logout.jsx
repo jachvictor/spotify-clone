@@ -5,7 +5,10 @@ import axios from "axios";
 
 export default function Logout() {
   const CLIENT_ID = "1339902024254cb6aa018773f8d49be9";
+    //  const CLIENT_ID = "51b9d0ed71a04247941c4d204b1b54e2";
+ 
   const REDIRECT_URI = "https://jachvictor.github.io/spotify-clone/";
+  //  const REDIRECT_URI = "http://localhost:3000/";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
@@ -38,7 +41,7 @@ export default function Logout() {
     window.localStorage.removeItem("token");
   };
   return (
-    <div>
+    <div className="conlog">
       {!token ? (
         <a
           href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}

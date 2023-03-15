@@ -12,27 +12,27 @@ import FrameComponent from "react-frame-component";
 import Frame from "react-frame-component";
 import Logout from "./logout";
 import { Search } from "./search";
+// import "../images1"
 
 export default function Sidebar() {
-  const handle = () => {
-    <Search />;
-  };
   return (
     // <Frame className="fr">
     <div className="contain2">
       <div className="color1"></div>
       <div className="color2"></div>
       <div className="color3"></div>
-      <div className="link">
-        <div className="logo"></div>
-      </div>
+      {/* <div className="link"> */}
+        {/* <div className="logo"> */}
+        <img className="img1" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+
+        {/* </div> */}
+      {/* </div> */}
       <div>
         <ul className="ulist">
           <li className="list">
+          {/* <img src="/logo.png" alt="" className="imglogo" /> */}
             <MdHomeFilled className="home" />
-            <span onClick={handle} className="span1">
-              Home
-            </span>
+            <span className="span1">Home</span>
           </li>
           <li className="list">
             <TrendingDown className="home" />
@@ -62,7 +62,7 @@ export default function Sidebar() {
           </li>
           <li className="list">
             <PlaylistAdd className="home" />
-            <span className="span1">
+            <span className="span2">
               <Playlists />
             </span>
           </li>
